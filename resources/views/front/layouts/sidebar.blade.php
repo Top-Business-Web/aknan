@@ -61,7 +61,7 @@
             </div>
         </div>
             <!-- content landing -->
-            <div class="content d-flex flex-column justify-content-center">
+            <div class="content d-flex flex-column justify-content-center mb-5">
                 <h1 class="text-center text-light">{{ trans_model($setting,'title') }}</h1>
                 <p class="mt-4 text-center fw-bold text-light">{{ trans_model($setting,'sub_title') }}</p>
                 <div class="d-flex justify-content-center mt-4 content-search">

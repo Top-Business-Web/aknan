@@ -114,10 +114,28 @@ body{
 .icon-search{
     position: absolute;
     color: var(--yellow-color);
-    right: 33%;
+    right: 30%;
     top: 30%;
 }
 /* end landing content */
+
+@media (max-width: 768px) {
+    .icon-search {
+        right: 18%;
+    }
+}
+
+@media (max-width: 576px) {
+    .icon-search {
+        right: 8%;
+    }
+}
+
+@media (max-width: 992px) {
+    .icon-search {
+        right: 26%;
+    }
+}
 
 /* start tap content */
 .tap-content{
