@@ -5,10 +5,14 @@
 @include('front.layouts.head')
 <!-- head -->
 <body>
+@php
+    $images = [asset('assets/front/photo/2.jpg'),asset('assets/front/photo/3.jpg'),asset('assets/front/photo/4.jpg')];
+    $rand = array_rand($images);
+@endphp
 <!-- preloader -->
-{{--<div class="loader">--}}
-{{--    <img class="myimage img-fluid" src="{{ asset('assets/front/') }}/photo/2.jpg" alt="no-image">--}}
-{{--</div>--}}
+<div class="loader">
+    <img class="myimage img-fluid" src="{{ $images[$rand]  }}" alt="no-image">
+</div>
 <!-- preloader -->
 
 <!-- sidebar -->
