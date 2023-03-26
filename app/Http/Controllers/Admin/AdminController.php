@@ -76,7 +76,7 @@ class AdminController extends Controller
     {
             $inputs = $request->all();
             if($request->has('image')){
-                $inputs['image'] = $this->saveImage($request->image,'assets/uploads/admins');
+                $inputs['image'] = $this->saveImage($request->image,'assets/uploads/admins','photo');
             }
             $inputs['password'] = Hash::make($request->password);
             if(Admin::create($inputs))
@@ -99,7 +99,7 @@ class AdminController extends Controller
             if (file_exists($admin->image)) {
                 unlink($admin->image);
             }
-            $inputs['image'] = $this->saveImage($request->image, 'assets/uploads/admins');
+            $inputs['image'] = $this->saveImage($request->image, 'assets/uploads/admins','photo');
         }
         if ($request->has('password') && $request->password != null)
             $inputs['password'] = Hash::make($request->password);

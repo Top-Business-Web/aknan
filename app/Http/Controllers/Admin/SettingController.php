@@ -25,6 +25,9 @@ class SettingController extends Controller
         if($request->has('logo')){
             $inputs['logo'] = $this->saveImage($request->logo,'assets/uploads/setting','photo');
         }
+        if($request->has('dark_logo')){
+            $inputs['dark_logo'] = $this->saveImage($request->dark_logo,'assets/uploads/setting','photo');
+        }
         if($request->has('bg_img')){
             $inputs['bg_img'] = $this->saveImage($request->bg_img,'assets/uploads/setting','photo');
         }

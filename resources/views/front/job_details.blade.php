@@ -23,42 +23,45 @@
                 {!! trans_model($job,'desc') !!}
             </ul>
             <div class="d-flex justify-content-center align-items-center mt-5">
-                <div class="information-cv d-flex justify-content-center align-items-center flex-column">
-                    <div class="wrapper">
-                        <form class="drag-file" method="post" id="formJob">
-                            @csrf
-                            <input type="file" class="file-input" hidden name="file">
-                            <i class="fa-solid fa-cloud-upload-alt"></i>
-                            <p class="mt-2">{{ lang() == 'ar' ? 'ادراج الفايل' : 'Insert file' }}</p>
-                            {{--                        </form>--}}
-                            <section class="uploaded-area"></section>
-                    </div>
-                    <div class="row form-contact mt-5" method="post" id="formJob">
-                        <div class="col-md-6 col-sm-12 mb-4">
-                            <input type="text" class="w-100 p-3" name="name"
-                                   placeholder="{{ lang() == 'ar' ? 'الاسم' : 'the name' }}" required>
-                        </div>
-                        <div class="col-md-6 col-sm-12 mb-4">
-                            <input type="email" class="w-100 p-3" name="email"
-                                   placeholder="{{ lang() == 'ar' ? 'الايميل' : 'Email' }}" required>
-                        </div>
-                        <div class="col-md-6 col-sm-12 mb-4">
-                            <input type="text" class="w-100 p-3" name="phone"
-                                   placeholder="{{ lang() == 'ar' ? 'رقم التليفون' : 'phone number' }}" required>
-                        </div>
-                        <div class="col-md-6 col-sm-12 mb-4">
-                            <input type="number" class="w-100 p-3" name="salary"
-                                   placeholder="{{ lang() == 'ar' ? 'المرتب الحالى' : 'current salary' }}" required>
-                        </div>
-                        <div class="col-12 mt-2 d-flex justify-content-center">
-                            <button type="submit" id="JobBtn"
-                                    class="btn-project btn-icon-contact mt-2">{{ lang() == 'ar' ? 'ارسال' : 'Send' }}</button>
-                        </div>
-                        <div class="col-12 mb-4 d-flex justify-content-center">
+                <div class="information-cv">
+
+                    <form class="drag-file" method="post" id="formJob">
+                        @csrf
+                       <div class="d-flex justify-content-center">
+                           <div style="width: 400px;height: 13rem" class="wrapper d-flex justify-content-center flex-column">
+                               <input type="file" class="file-input" hidden name="file">
+                               <i class="fa-solid fa-cloud-upload-alt"></i>
+                               <p class="mt-2 text-center">{{ lang() == 'ar' ? 'ادراج الفايل' : 'Insert file' }}</p>
+                               {{--                        </form>--}}
+                               <section class="uploaded-area"></section>
+                           </div>
+                       </div>
+                        <div class="row form-contact mt-5" method="post" id="formJob">
+                            <div class="col-md-6 col-sm-12 mb-4">
+                                <input type="text" class="w-100 p-3" name="name"
+                                       placeholder="{{ lang() == 'ar' ? 'الاسم' : 'the name' }}" required>
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-4">
+                                <input type="email" class="w-100 p-3" name="email"
+                                       placeholder="{{ lang() == 'ar' ? 'الايميل' : 'Email' }}" required>
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-4">
+                                <input type="text" class="w-100 p-3" name="phone"
+                                       placeholder="{{ lang() == 'ar' ? 'رقم التليفون' : 'phone number' }}" required>
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-4">
+                                <input type="number" class="w-100 p-3" name="salary"
+                                       placeholder="{{ lang() == 'ar' ? 'المرتب الحالى' : 'current salary' }}" required>
+                            </div>
+                            <div class="col-12 mt-2 d-flex justify-content-center">
+                                <button type="submit" id="JobBtn"
+                                        class="btn-project btn-icon-contact mt-2">{{ lang() == 'ar' ? 'ارسال' : 'Send' }}</button>
+                            </div>
+                            <div class="col-12 mb-4 d-flex justify-content-center">
                             <span
                                 class="d-flex loading-area d-none">{{ lang() == 'ar' ? 'جاري الارسال ...' : 'loading ...' }}</span>
+                            </div>
                         </div>
-                    </div>
                     </form>
                 </div>
             </div>

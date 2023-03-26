@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row">
                 @foreach($partners as $partner)
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
                         <div class="card-partner pb-3 mb-3">
                             <div class="image-partner">
                                 <img class="img-fluid" src="{{ asset($partner->img) }}" alt="no-image">

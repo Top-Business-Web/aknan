@@ -18,7 +18,7 @@
             <div class="row">
                 @if($jobs->count() > 0)
                 @foreach($jobs as $job)
-                <div class="col-lg-4 col-12">
+                <div class="col-lg-4 col-12 mb-3">
                     <div class="card-jops pb-3 mb-3">
                         <div class="image-jops">
                             <img class="img-fluid w-100" src="{{ asset($job->image) }}" alt="no-image">

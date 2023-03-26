@@ -28,7 +28,7 @@
             </div>
             <div class="row">
                 @foreach($services as $service)
-                <div class="col-md-4 col-sm-6 col-12 d-flex flex-column jus align-items-center">
+                <div class="col-md-4 col-sm-6 col-12 d-flex flex-column jus align-items-center mb-3">
                     <div class="total-card">
                         <div class="d-flex justify-content-center">
                             <img class="img-fluid img-projects" src="{{ asset($service->logo) }}" alt="no-image">

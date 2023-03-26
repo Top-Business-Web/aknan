@@ -16,7 +16,7 @@
     <div class="section-request pt-5 pb-5">
         <div class="container">
             <div class="row mt-5">
-                <div class="col-lg-5 col-12">
+                <div class="col-lg-5 col-12 mb-5">
                     <h3 class="color-yellow fw-bold mb-4">{{ lang() == 'ar' ? 'مجموعة اكنان العقارية' : 'Aknan Real Estate Group' }}</h3>
                     <p class="" style="text-align: justify;">{{ lang() == 'ar' ? 'نحن ملتزمون بمساعدة عملائنا في الحصول على أفضل الحلول المتاحة في الاستثمار العقارى من خلال  متخصصين في العناية بالعميل زنفهم أفضل االختالفات الثقافية
                         للعمالء في المملكة العربية السعودية ونضمن أفضل تجربة لهم. لدينا فريق متخصصين في العقار، نحن متحمسون

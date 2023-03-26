@@ -3,7 +3,7 @@
     <div class="container border-color">
         <div class="logo-footer d-flex justify-content-center mb-4">
             <a class="text-decoration-none" href="{{ route('home') }}">
-                <img src="{{ asset($setting->logo) }}" alt="no-image">
+                <img src="{{ asset($setting->dark_logo) }}" alt="no-image">
             </a>
         </div>
         <div class="row">

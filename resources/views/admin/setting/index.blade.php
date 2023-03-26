@@ -21,14 +21,23 @@
                             @csrf
                             @method('PATCH')
                             <div class="row">
-                                <div class="form-group col-3">
-                                    <label for="name" class="form-control-label">اللوجو</label>
+                                <div class="form-group col-6">
+                                    <label for="name" class="form-control-label"> اللوجو الفاتح</label>
                                     <input type="file" class="dropify" name="logo"
                                            data-default-file="{{ ($setting->logo != null) ? asset($setting->logo) : asset('assets/admin/assets/images/logo1.png')}}"
                                            accept="image/png,image/webp , image/gif, image/jpeg,image/jpg"/>
                                     <span class="form-text text-danger text-center">مسموح فقط بالصيغ التالية : png, gif, jpeg, jpg,webp</span>
                                 </div>
-                                <div class="form-group col-9">
+                                <div class="form-group col-6">
+                                    <label for="name" class="form-control-label">اللوجو الغامق</label>
+                                    <input type="file" class="dropify" name="dark_logo"
+                                           data-default-file="{{ ($setting->dark_logo != null) ? asset($setting->dark_logo) : asset('assets/admin/assets/images/logo1.png')}}"
+                                           accept="image/png,image/webp , image/gif, image/jpeg,image/jpg"/>
+                                    <span class="form-text text-danger text-center">مسموح فقط بالصيغ التالية : png, gif, jpeg, jpg,webp</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-12">
                                     <label for="name" class="form-control-label">الغلاف</label>
                                     <input type="file" class="dropify" name="bg_img"
                                            data-default-file="{{ ($setting->bg_img != null) ? asset($setting->logo) : asset('assets/admin/assets/images/logo1.png')}}"

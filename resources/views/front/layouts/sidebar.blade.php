@@ -1,6 +1,6 @@
 @if(Route::currentRouteName() == 'home')
 <!-- landing -->
-<div class="landing">
+<div class="landing" style="background-image: url('{{ asset($setting->bg_img) }}')">
     <div class="container pt-3">
         <!-- navbar -->
         <div class="navbar">

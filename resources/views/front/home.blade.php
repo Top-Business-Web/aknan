@@ -47,7 +47,7 @@
     <div class="container">
         <div class="card-request">
             <div class="row">
-                <div class="col-lg-5 col-12">
+                <div class="col-lg-5 col-12 mb-3">
                     <h3 class="color-gray fw-bold mb-4">@lang('site.Aknan Real Estate Group')</h3>
                     <p class="text-light" style="text-align: justify;">@lang('site.We are committed to helping our customers get better
                          Solutions available in real estate investment through specialists in customer care.... ...')</p>

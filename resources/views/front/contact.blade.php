@@ -24,7 +24,7 @@
                         </p>
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="sells.html">
+                                <a class="nav-link" href="{{ route('sells') }}">
                                     <i class="fa-solid fa-location-dot ms-2"></i>
                                     <span class="email">{{ trans_model($setting,'address') }}</span>
                                 </a>
